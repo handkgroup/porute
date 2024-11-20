@@ -201,11 +201,9 @@ p {
 /* about section ends  */
 
 /* solution section  */
-
 .solution-lineup-wrapper{
-    background: url('../img/lp01/solution_bg.png') no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url('../img/lp01/solution_bg.png'), linear-gradient(90deg, #191919 100%, #191919 77.34%, #0C122F 56.65%, #0C193B 36.95%, #132A63 19.21%, #055194 0%) no-repeat;
+    background-position: top;
 }
 
 .solution-section {
@@ -213,11 +211,7 @@ p {
     text-align: center;
 }
 
-.solution-title {
-    
-}
-
-.solution-section-title h2 {
+.right-aligned-title {
     font-family: Inter;
     font-size: 36px;
     font-weight: 400;
@@ -229,15 +223,252 @@ p {
     text-transform: uppercase;
 }
 
-.solution-section-title h2 span {
+.right-aligned-title span {
     font-family: YuGothic;
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
     align-self: end;
+    margin: 0;
 }
 
+.solution-section-title p {
+    font-family: YuGothic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    padding: 26px 0 37px;
+}
+    
+
+.solution-cards {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .solution-card {
+    flex: 1 1 25%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .solution-card p {
+    font-family: YuGothic;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  
+  .solution-card1 {
+    background: url('../img/lp01/solution1.png') no-repeat center/cover;
+  }
+  
+  .solution-card2 {
+    background: url('../img/lp01/solution2.png') no-repeat center/cover;
+  }
+  
+  .solution-card3 {
+    background: url('../img/lp01/solution3.png') no-repeat center/cover;
+  }
+  
+  .solution-card4 {
+    background: url('../img/lp01/solution4.png') no-repeat center/cover;
+  }
+  
+  /* Full-Screen Hovered Cards */
+  .solution-card-hovered {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 100%; 
+    height: 550px; 
+    z-index: -1; 
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: YuGothic;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none !;
+  }
+
+  .solution-card-hovered p {
+    font-family: YuGothic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-decoration: none;
+  }
+  
+  .porute-button {
+    position: relative;
+    padding: 10px 40px;
+    width: 85px;
+    font-family: YuGothic;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+  }
+
+  .porute-button::before {
+    position: absolute;
+    content: '';
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/top/more-button.png);
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-decoration: none;
+  }
+
+  .porute-button::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 10px;
+    background-image: url(../img/top/arrow-white.png);
+    background-size: cover;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  .porute-button:hover {
+    border: 2px solid #fff;
+    border-radius: 30px;
+  }
+
+  .porute-button:hover::before {
+    display: none;
+}
+  /* Individual Hovered Backgrounds */
+  .solution-card1-hovered {
+    background: url('../img/lp01/solution1_hovered.png') no-repeat center/cover;
+  }
+  
+  .solution-card2-hovered {
+    background: url('../img/lp01/solution2_hovered.png') no-repeat center/cover;
+  }
+  
+  .solution-card3-hovered {
+    background: url('../img/lp01/solution3_hovered.png') no-repeat center/cover;
+  }
+  
+  .solution-card4-hovered {
+    background: url('../img/lp01/solution4_hovered.png') no-repeat center/cover;
+  }
+  
+  /* Hover State for Full-Screen Card */
+  .solution-card:hover + .solution-card-hovered,
+  .solution-card-hovered:hover {
+    z-index: 10; /* Bring to the top */
+    opacity: 1; /* Make visible */
+    pointer-events: all; /* Enable interaction */
+    text-decoration: none;
+  }
+
 /* solution section ends */
+
+/* line up section */
+
+.lineup-section {
+    text-align: center;
+}
+
+.lineup-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 46px;
+    
+  }
+  
+  .lineup-card-wrapper {
+    display: contents; /* Allows grid placement of children */
+  }
+  
+  .lineup-card {
+    background: url('../img/lp01/lineupbg.png'), #000 no-repeat center / cover;
+    height: 455px;
+    position: relative;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .lineup-card:nth-child(2n) {
+    background-position: -10px -40px; 
+  }
+
+  .lineup-card:nth-of-type(odd)::after {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  
+  .lineup-card:nth-child(2n) {
+    grid-row: span 1;
+    transform: translateY(40px); 
+  }
+  
+  .lineup-card img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .lineup-card h3 {
+    font-family: YuGothic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    z-index: 1; 
+  }
+  
+  .lineup-card p {
+    width: 400px;
+    font-family: YuGothic;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 18px 0 32px;
+    z-index: 1; 
+  }
+  
+  .lineup-card:hover {
+    text-decoration: none;
+  }
+
+/* line up section ends */
 
 @media screen and (max-width: 767px) {
 }
