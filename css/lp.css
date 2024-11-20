@@ -470,5 +470,123 @@ p {
 
 /* line up section ends */
 
+
+/* feature section */
+
+.feature-section {
+    background: url('../img/lp01/feature_bg.png') no-repeat center / cover;
+    text-align: center;
+    padding: 166px 0 0;
+}
+
+.feature-card {
+    border-top: 1px solid #FFFFFF;
+    padding: 50px 0 80px;
+    margin-top: 36px;
+}
+
+.feature-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 134px;
+}
+
+.feature-card-text {
+    text-align: left;
+    width: 50%;
+    max-width: 517px;
+}
+
+.feature-card-text span{
+    font-family: Inter;
+    font-size: 77px;
+    font-weight: 400;
+    line-height: 93.19px;
+    color: #fff;
+    opacity: 15.39%;
+}
+
+.feature-card-text h3 {
+    font-family: YuGothic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+    padding: 14.91px 0 39px;
+    margin: 0;
+}
+
+.feature-card-text-bottom {
+    display: flex;
+    align-items: center;
+    gap: 47.75px;
+}
+
+.featuer-card-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featuer-subtext {
+    font-family: YuGothic;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.feature-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23.5px;
+    margin-bottom: 20px;
+}
+
+.feature-bottom-inner {
+    position: relative;
+    display: inline-block;
+    padding: 20px 104.94px;
+}
+
+.feature-bottom-inner p{
+    font-family: YuGothic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.feature-bottom-inner img {
+    position: absolute;
+}
+
+.feature-bottom-inner img:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.feature-bottom-inner img:nth-of-type(2) {
+    top: 0;
+    right: 0;
+}
+
+.feature-bottom-inner img:nth-of-type(3) {
+    bottom: 0;
+    left: 0;
+}
+.feature-bottom-inner img:nth-of-type(4) {
+    right: 0;
+    bottom: 0;
+}
+
+.feature-bottom-text{
+    font-family: YuGothic;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 56px;
+}
+/* feature section ends */
+
 @media screen and (max-width: 767px) {
 }
