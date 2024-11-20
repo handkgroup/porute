@@ -200,5 +200,44 @@ p {
 
 /* about section ends  */
 
+/* solution section  */
+
+.solution-lineup-wrapper{
+    background: url('../img/lp01/solution_bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.solution-section {
+    padding: 66px 0 121px;
+    text-align: center;
+}
+
+.solution-title {
+    
+}
+
+.solution-section-title h2 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.solution-section-title h2 span {
+    font-family: YuGothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    align-self: end;
+}
+
+/* solution section ends */
+
 @media screen and (max-width: 767px) {
 }
