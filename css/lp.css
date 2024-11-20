@@ -1,0 +1,204 @@
+@charset "EUC-JP";
+
+/* フォント基本設定 */
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-size: 36px;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+}
+/* フォント基本設定 */
+
+/* FVコンテンツ */
+.fv-section {
+  background-image: url(../img/lp01/fv_background.png),
+    linear-gradient(
+      to bottom,
+      #055194,
+      #132a63,
+      #0c193b,
+      #0c122f,
+      #191919,
+      #191919
+    );
+  background-size: cover; /* 背景画像が要素全体を覆うようにする */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+.fv-section-top-person {
+  display: flex;
+  justify-content: center; /* 横方向の中央揃え */
+}
+
+.fv-section-special {
+  display: flex;
+  justify-content: center; /* 横方向の中央揃え */
+  padding: 80px 0;
+}
+
+.fv-section-top {
+  position: relative;
+}
+
+.fv-section-top-text {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 60%;
+}
+
+.fv-section-top-text-1 {
+  font-size: 21px;
+  margin-bottom: 0;
+}
+.fv-section-top-text-2 {
+  font-size: 38px;
+  margin-top: 0;
+}
+/* FVコンテンツ */
+
+/* メディア掲載コンテンツ */
+.fv-section-media {
+  padding: 120px 0;
+}
+
+.fv-section-media-title-wrapper {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 縦方向に中央揃え */
+  justify-content: center; /* 全体を中央揃え */
+  gap: 10px; /* テキストと横線の間にスペースを追加 */
+}
+
+.fv-section-media-title-wrapper::before,
+.fv-section-media-title-wrapper::after {
+  content: ""; /* 擬似要素にコンテンツを設定 */
+  flex: 0.21; /* 横線を均等に伸ばす */
+  height: 2px; /* 横線の高さ */
+  background-color: white; /* 横線の色 */
+}
+
+.fv-section-media-title {
+  white-space: nowrap; /* テキストの折り返しを防ぐ */
+}
+
+.fv-section-media-text {
+  display: flex; /* 子要素を横並びにする */
+  justify-content: center; /* 子要素全体を中央揃え */
+  align-items: center; /* 縦方向も中央揃え */
+  gap: 80px; /* テキスト間のスペースを調整 */
+  padding: 40px 0;
+}
+
+.fv-section-media-text p {
+  margin: 0; /* デフォルトの余白を削除 */
+  position: relative; /* 擬似要素配置のため */
+}
+
+.fv-section-media-text p:not(:last-child)::after {
+  content: "|"; /* 縦線を表示 */
+  position: absolute;
+  right: -40px; /* 縦線の位置を調整 */
+  color: #ffffff; /* 縦線の色 */
+  font-size: 16px; /* 必要に応じて調整 */
+}
+/* メディア掲載コンテンツ */
+
+/* anker section */
+.fv-anker-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 219px;
+}
+
+.anker-item {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-transform: uppercase;
+}
+
+.anker-item:not(:last-of-type) p:last-of-type {
+  padding-left: 39px;
+}
+
+/* anker section ends */
+
+/* about section */
+.about-section {
+  background: url("../img/lp01/about-bg.png"),
+    linear-gradient(
+        90deg,
+        #191919 100%,
+        #191919 77.34%,
+        #0c122f 56.65%,
+        #0c193b 36.95%,
+        #132a63 19.21%,
+        #055194 0%
+      )
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 58px;
+  border: 1px solid #000000
+}
+
+.about-section-title {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    
+}
+
+.about-section-title h2 {
+  font-family: YuGothic;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  padding-bottom: 25px;
+}
+
+.about-section-text-top {
+  font-family: YuGothic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.about-section-text-middle {
+    font-family: YuGothic;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 35px 0 21px;
+}
+
+.about-section-text-bottom {
+    font-family: YuGothic;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* about section ends  */
+
+@media screen and (max-width: 767px) {
+}
